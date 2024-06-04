@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('images/pic-1.webp');
 }
 
 :root{
@@ -20,7 +21,7 @@ ul{
     padding: 0.8rem 2.5rem;
     text-transform:uppercase;
     background: #fff;
-    color: rgb(94, 11, 94);
+   /* color: rgb(94, 11, 94);*/
     border-radius: 10px;
     cursor: pointer;
 }
@@ -44,7 +45,7 @@ ul{
 }
 .line,
 .line4{
-    background-image: "";
+   /* background-image: url('images/pic-1.webp');*/
     width: 100%;
     height: 100px;
     margin-top: -3.6rem;
@@ -54,7 +55,7 @@ ul{
 }
 .line2,
 .line3{
-    background-image: "";
+    /*background-image: url('images/pic-1.webp');*/
     width: 100%;
     height: 100px;
     margin-top: -3.6rem;
@@ -83,7 +84,7 @@ input[type=submit]{
 }
 
 .form-container{
-    background: rgb(94, 11, 94);
+  /*  background: rgb(94, 11, 94);*/
     width: 100%;
     min-height: 100vh;
     padding: 4rem 0;
