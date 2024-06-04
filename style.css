@@ -113,3 +113,26 @@ input[type=submit]{
     background-repeat: no-repeat;
     z-index: 1;
 }
+.form-container h1{
+     text-transform: uppercase;
+     margin: 2rem 0; 
+     font-size: 2.3rem;
+     text-align: center;
+}
+.form-container form{
+    width: 60%;
+    margin: 1rem auto;
+    background: rgb(255 255 255/80%);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.form-container form label{
+    text-transform: uppercase;
+    width: 100%;
+}
+.form-container form input{
+    width: 85%;
+}
