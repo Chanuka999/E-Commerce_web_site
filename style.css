@@ -21,7 +21,7 @@ ul{
     padding: 0.8rem 2.5rem;
     text-transform:uppercase;
     background: #fff;
-   /* color: rgb(94, 11, 94);*/
+     color: var(--orange);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -84,7 +84,7 @@ input[type=submit]{
 }
 
 .form-container{
-  /*  background: rgb(94, 11, 94);*/
+   /* background: var(--orange);*/
     width: 100%;
     min-height: 100vh;
     padding: 4rem 0;
