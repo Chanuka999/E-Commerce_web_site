@@ -20,7 +20,7 @@ ul{
     padding: 0.8rem 2.5rem;
     text-transform:uppercase;
     background: #fff;
-    color: var(--orange);
+    color: rgb(94, 11, 94);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -83,7 +83,7 @@ input[type=submit]{
 }
 
 .form-container{
-    background: var(--orange);
+    background: rgb(94, 11, 94);
     width: 100%;
     min-height: 100vh;
     padding: 4rem 0;
@@ -135,4 +135,14 @@ input[type=submit]{
 }
 .form-container form input{
     width: 85%;
+}
+.form-container form textarea{
+    width: 85%;
+    height: 200px;
+}
+.form-container form button{
+    width: 85%;
+    background: var(--orange);
+    border: none;
+
 }
