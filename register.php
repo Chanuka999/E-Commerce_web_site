@@ -2,16 +2,16 @@
  include 'connection.php';
  
  if(isset($_POST['submit-btn'])){
-   $filter_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+ $filter_name = filter_var($_POST['name'], /*FILTER_SANITIZE_STRING*/);
    $name = mysqli_real_escape_string($conn, $filter_name);
 
-   $filter_email = filter_var($_POST['email'], FILTER_SANITIZE_STRING );
+$filter_email = filter_var($_POST['email'], /*FILTER_SANITIZE_STRING */);
    $email = mysqli_real_escape_string($conn, $filter_email);
 
-   $filter_password = filter_var($_POST['password'], FILTER_SANITIZE_STRING );
+$filter_password = filter_var($_POST['password'], /*FILTER_SANITIZE_STRING*/ );
    $password = mysqli_real_escape_string($conn, $filter_password);
 
-   $filter_cpassword = filter_var($_POST['cpassword'], FILTER_SANITIZE_STRING );
+$filter_cpassword = filter_var($_POST['cpassword'],/*FILTER_SANITIZE_STRING*/ );
    $cpassword = mysqli_real_escape_string($conn, $filter_cpassword);
 
    $select_user = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email'" ) or die('query failed');
@@ -38,7 +38,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <?php
+  
+    <section class="form-container">
+    <?php
     if(isset($message)){
         foreach ($message as $message){
             echo '
@@ -51,8 +53,7 @@
         }
     }
 
-?>
-    <section class="form-container">
+    ?>
         <form method="post">
            <h1>Register now</h1>
            <input type="text" name="name" placeholder="enter your name" required>
